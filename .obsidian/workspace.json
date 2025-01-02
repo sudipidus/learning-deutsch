@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "97cffc7b9a45d3f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1643a9c6593c0a0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cd2ecb326d3983a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0f119256eedf0741",
+    "type": "split",
+    "children": [
+      {
+        "id": "14efa928dbfdd319",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6bb179a97bc41bb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "dcd5d2df1a0ca3a8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7c07019fe8232ed8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 201.5
+  },
+  "right": {
+    "id": "51ac16faafffed3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f25a0d33764e415",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a2c738c21176ca2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "making new friend in Berlin.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for making new friend in Berlin"
+            }
+          },
+          {
+            "id": "611a6a4d1cf276bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "making new friend in Berlin.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from making new friend in Berlin"
+            }
+          },
+          {
+            "id": "e8247c087108372e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b6a70601e335e135",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "making new friend in Berlin.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of making new friend in Berlin"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e6bb179a97bc41bb",
+  "lastOpenFiles": [
+    "talk about feeling bored.md",
+    "README.md",
+    "Templates/German Reading Exercise.md",
+    "gardening.md",
+    "a romantic couple who loves gardening.md",
+    "making new friend in Berlin.md",
+    "Articles.md",
+    "college friends reminiscing about their college days.md",
+    "Syntax Analysis.md",
+    "Welcome.md",
+    "Business Impact.md",
+    "a boy who loves mountain and trekking.md",
+    "Templates"
+  ]
+}

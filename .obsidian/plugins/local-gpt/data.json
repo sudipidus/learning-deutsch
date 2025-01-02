@@ -1,0 +1,87 @@
+{
+  "providers": {
+    "ollama": {
+      "url": "http://localhost:11434",
+      "defaultModel": "llama3",
+      "embeddingModel": "",
+      "type": "ollama"
+    },
+    "ollama_fallback": {
+      "url": "http://localhost:11434",
+      "defaultModel": "gemma2",
+      "embeddingModel": "",
+      "type": "ollama"
+    },
+    "openaiCompatible": {
+      "url": "http://localhost:8080/v1",
+      "apiKey": "",
+      "embeddingModel": "",
+      "type": "openaiCompatible"
+    },
+    "openaiCompatible_fallback": {
+      "url": "http://localhost:8080/v1",
+      "apiKey": "",
+      "embeddingModel": "",
+      "type": "openaiCompatible"
+    }
+  },
+  "defaults": {
+    "provider": "ollama",
+    "fallbackProvider": "",
+    "creativity": "high"
+  },
+  "actions": [
+    {
+      "name": "Quick German Lookup",
+      "prompt": "As a German language trainer, look up english meaning of the german word \"{selection}\" and respond in exactly this format:\n{selection} => [closest English meaning]\n\nIMPORTANT: Your response should be exactly one line, replacing WORD with the selected text.\n",
+      "model": "",
+      "system": "",
+      "replace": false
+    },
+    {
+      "name": "German Reading A1",
+      "prompt": "You are a German language teacher. Using \"{selection}\" as the core word/sentence, create a structured reading exercise in this format:\n\n## Text\n[Generate a 3-4 sentence paragraph in German A1 level using the input word/phrase naturally. Keep sentences simple but engaging.]\n\n\n## Vocabulary\n[List 5 key words from the text with their meanings]\n|German|English|Example|\n|------|-------|-------|\n|[word]|[meaning]|[simple usage]|\n\n## Comprehension Questions\n[3 simple questions in German about the text with English translations]\n\n## Grammar Focus\n[Highlight ONE grammar concept from the text with a brief explanation]\n\nKeep the language level appropriate for intermediate learners. Use natural, conversational German. Include cultural context where relevant.\n",
+      "model": "",
+      "system": "",
+      "replace": false
+    },
+    {
+      "name": "German Vocab",
+      "system": "",
+      "prompt": "You are a precise German language tutor. For the word \"{selection}\", respond with EXACTLY one table row in this format: \n\n\n| {selection} | der/die/das + {selection} => word  primary meaning in English (grammatical info) | brief etymology or word composition in english | usage example with english translation\n\nRules:\n1. If the word is in english take the closest German word for that and do the process. Selection becomes the german word\n2. Always include grammatical gender for nouns\n3. Maintain the table always to have at most 5 columns and not use special markdown characters so that table doesn't break\n4. escape the markdown characters so they don't break the table\n5. Don't include anything outside of '|' (not even notes or PS)\n\n\nFormat all responses consistently for easy review and memorization. Focus on practical, modern German usage.",
+      "replace": true
+    },
+    {
+      "name": "🪄 General help",
+      "prompt": "",
+      "system": "You are an assistant helping a user write more content in a document based on a prompt. Output in markdown format. Do not use links. Do not include literal content from the original document."
+    },
+    {
+      "name": "✍️ Continue writing",
+      "prompt": "Act as a professional editor with many years of experience as a writer. Carefully finalize the following text, add details, use facts and make sure that the meaning and original style are preserved. Purposely write in detail, with examples, so that your reader is comfortable, even if they don't understand the specifics. Don't use clericalisms, evaluations without proof with facts, passive voice. Use Markdown markup language for formatting. Answer only content and nothing else, no introductory words, only substance.",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
+    },
+    {
+      "name": "🍭 Summarize",
+      "prompt": "Make a concise summary of the key points of the following text.",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
+    },
+    {
+      "name": "📖 Fix spelling and grammar",
+      "prompt": "Proofread the below for spelling and grammar.",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can.",
+      "replace": true
+    },
+    {
+      "name": "✅ Find action items",
+      "prompt": "Act as an assistant helping find action items inside a document. An action item is an extracted task or to-do found inside of an unstructured document. Use Markdown checkbox format: each line starts with \"- [ ] \"",
+      "system": "You are an AI assistant that follows instruction extremely well. Help as much as you can."
+    },
+    {
+      "name": "🧠 New System Prompt",
+      "prompt": "",
+      "system": "You are a highly skilled AI prompt engineer with expertise in creating tailored prompts for a wide range of professional roles. You have a deep knowledge of how to craft prompts that effectively guide the language model to produce high-quality, contextually appropriate responses.\n\nYour task is to generate a custom system prompt for different roles based on user input. This involves understanding the specific requirements of each role, the context in which the prompt will be used, and the desired output format. You are skilled in structuring prompts that ensure clarity, relevance, and utility.\n\nCreate a custom system prompt for an LLM to assist users in generating contextually appropriate and highly effective responses for various roles. The prompt should provide clear instructions to the LLM on how to handle specific scenarios related to the role, including the tone and format of the response.\n\nStart by providing a role \"You are...\" and context as a summary of the situation or background information relevant to the prompt. Define the main objective, outlining what the LLM needs to accomplish.\n\nInclude instructions on the appropriate style and tone (e.g., formal, casual, technical, empathetic) based on the role and audience. Identify the target audience to tailor the LLM's output effectively. Specify the format of the response, whether it should be a narrative, bullet points, step-by-step guide, code, or another format. Avoid using headings or examples; the prompt should read as a continuous, cohesive set of instructions.\nANSWER PROMPT AND NOTHING ELSE!"
+    }
+  ],
+  "_version": 6
+}
