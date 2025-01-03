@@ -32,7 +32,14 @@
   },
   "actions": [
     {
-      "name": "Quick German Lookup",
+      "name": "English to German",
+      "prompt": "convert the selected english phrase to German",
+      "model": "",
+      "system": "",
+      "replace": false
+    },
+    {
+      "name": "German -> English",
       "prompt": "As a German language trainer, look up english meaning of the german word \"{selection}\" and respond in exactly this format:\n{selection} => [closest English meaning]\n\nIMPORTANT: Your response should be exactly one line, replacing WORD with the selected text.\n",
       "model": "",
       "system": "",
